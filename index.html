@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="height=device-height, initial-scale=1, shrink-to-fit=no">
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Creepster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <title>SUPER POULE</title>
+</head>
+
+<body>
+  <audio autoplay="false" id="beep" src="./Sons/Coq.mp3"></audio>
+  <audio loop id="zic"autoplay="false"> 
+      <source src="audio.mp3" type="audio/mp3">
+    </audio>
+  <div class="home">
+    <div>
+      <h1 class='titleGame mb-0'>S<span class="yellow">u</span><span class="red">p</span><span class="green">e</span><span class="yellow">r</span>
+      <br> 
+      <span class="red">P</span><span class="green">o</span><span class="yellow">u</span>l<span class="green">e</span></h1>
+    </div>
+      <div class="modal fade" id="Modal" >
+      </div>
+      <div id="character" class="d-flex justify-content-center mt-5"></div>
+      <h2>Choisis ton personnage, puis tape ton pseudo!</h2>
+      <input type="text" id="myPseudo" class="mb-3 mt-1"placeholder="Ton Pseudo">
+      <button class="btn"type="button"id="openModal"data-toggle="modal" data-target="#Modal"onclick="getPseudo(),JouerSon()">C'est bon?</button>
+      <div id="showCharacters" class="row d-flex justify-content-center align-bottom">
+      <a id="randomCharacter" type="button" onclick="{GetRandomCharacter()}">
+        <div class="card mr-2 random-card" style="width: 7rem;" >
+          <img class="card-img-top img-fluid"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7ycHZ7YN6-YkfivBvVJ9heMtVi2U8pFBQ5Fa8UmS4jccJ6U-r">     
+          <div class="card-body">
+            <p class="card-text">Au pif</p>
+          </div>    
+        </div>
+        </a>
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- <script type="text/JavaScript" src="pseudoChoice.js"></script> -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script type="text/JavaScript" src="pseudoChoice.js"></script> -->
+    <script type="text/JavaScript" src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+      </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+      </script>
+</body>
+
+</html>
